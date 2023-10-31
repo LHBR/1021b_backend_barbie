@@ -13,10 +13,8 @@ describe("Testando salva filme use case",()=>{
             descricao:"test",
             imagem:"test"
         }
-
         const resultado = salvaFilme.execute(input)
         expect(resultado).toEqual(input)
-
     })
 })
 

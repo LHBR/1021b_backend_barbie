@@ -19,5 +19,4 @@ export default class BancoEmMemoria{
     public buscarPorId(id:number){
         return this.filmes.find(filme => filme.id === id)
     }
-   
 }
