@@ -1,14 +1,12 @@
-import FilmeRepositorioInterface from "./filme-repositorio-interface"
+import FilmeRepositorioInterface from "./filme-repositorio-interface";
 
 export default class ListaFilme{
-    constructor(private filmeRepositorio:FilmeRepositorioInterface){}
-    public async executar():Promise<Filme[]>{
+    //Construtor
+    constructor(
+        readonly filmeRepositorio:FilmeRepositorioInterface
+    ){}
+    //executar
+    public async executar(){
         return this.filmeRepositorio.listar()
     }
-}
-type Filme = {
-    id:number,
-    titulo:string,
-    descricao:string,
-    foto:string
 }
