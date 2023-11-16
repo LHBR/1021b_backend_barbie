@@ -1,7 +1,6 @@
 import { describe, expect, test,beforeEach } from "vitest";
 import ListaFilme from "./lista-filme.use-case";
 import BancoEmMemoria from "../infra/banco/banco-em-memoria";
-import { b } from "vitest/dist/reporters-5f784f42";
 describe("ListaFilme", () => {
     const bancoEmMemoria = new BancoEmMemoria();
 
@@ -30,7 +29,7 @@ describe("ListaFilme", () => {
             id: 1,
             titulo: "O Poderoso Chefão",
             descricao: "Filme de máfia",
-            imagem: "fotofilme.jpg" 
+            imagem: "fotofilme.jpg"
         });
         expect(filmes[1]).toEqual({
             id: 2,
