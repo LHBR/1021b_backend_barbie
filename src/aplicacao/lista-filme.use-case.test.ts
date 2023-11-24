@@ -9,7 +9,7 @@ describe("ListaFilme", () => {
             id: 1,
             titulo: "O Poderoso Chefão",
             descricao: "Filme de máfia",
-            imagem: "fotofilme.jpg"
+            imagem: "chefao.jpg"
         },
         {
             id: 2,
